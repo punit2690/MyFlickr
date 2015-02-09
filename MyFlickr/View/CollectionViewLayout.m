@@ -8,7 +8,7 @@
 
 #import "CollectionViewLayout.h"
 
-#define CELLWIDTH 144
+#define CELLWIDTH 140
 #define CELLHEIGHT 195
 @implementation CollectionViewLayout
 
