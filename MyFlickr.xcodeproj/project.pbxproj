@@ -9,11 +9,27 @@
 /* Begin PBXBuildFile section */
 		8D482F941A83A61100DD9405 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482F931A83A61100DD9405 /* main.m */; };
 		8D482F971A83A61100DD9405 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482F961A83A61100DD9405 /* AppDelegate.m */; };
-		8D482F9A1A83A61100DD9405 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482F991A83A61100DD9405 /* ViewController.m */; };
 		8D482F9D1A83A61100DD9405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D482F9B1A83A61100DD9405 /* Main.storyboard */; };
 		8D482F9F1A83A61100DD9405 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D482F9E1A83A61100DD9405 /* Images.xcassets */; };
 		8D482FA21A83A61100DD9405 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D482FA01A83A61100DD9405 /* LaunchScreen.xib */; };
 		8D482FAE1A83A61100DD9405 /* MyFlickrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482FAD1A83A61100DD9405 /* MyFlickrTests.m */; };
+		8D482FBC1A84502A00DD9405 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482FBB1A84502A00DD9405 /* CollectionViewController.m */; };
+		8D482FC21A8450BB00DD9405 /* KeyConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482FC11A8450BB00DD9405 /* KeyConstants.m */; };
+		8D482FC51A84513200DD9405 /* WebServiceAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482FC41A84513200DD9405 /* WebServiceAPI.m */; };
+		8D482FC91A8451AC00DD9405 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482FC81A8451AC00DD9405 /* CustomCollectionViewCell.m */; };
+		8D482FCF1A845C0700DD9405 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482FCE1A845C0700DD9405 /* Feed.m */; };
+		8D482FD31A845D1A00DD9405 /* NSDictionary+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482FD21A845D1A00DD9405 /* NSDictionary+safe.m */; };
+		8D482FD81A84646500DD9405 /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482FD71A84646500DD9405 /* FeedItem.m */; };
+		8D482FDC1A846FDF00DD9405 /* CollectionViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482FDB1A846FDF00DD9405 /* CollectionViewControllerModel.m */; };
+		8D482FE01A84727800DD9405 /* AsyncNSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482FDF1A84727800DD9405 /* AsyncNSURLConnection.m */; };
+		8D482FE41A85DC7A00DD9405 /* WebServiceResponseNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482FE31A85DC7A00DD9405 /* WebServiceResponseNotification.m */; };
+		8D482FE91A86A15B00DD9405 /* CollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482FE81A86A15B00DD9405 /* CollectionViewLayout.m */; };
+		8D482FF51A87409900DD9405 /* UIImage+AverageColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482FF41A87409900DD9405 /* UIImage+AverageColor.m */; };
+		8D482FF71A87B40500DD9405 /* Flickrlogo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D482FF61A87B40500DD9405 /* Flickrlogo.gif */; };
+		8D482FFA1A881D5100DD9405 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D482FF91A881D5100DD9405 /* DetailViewController.m */; };
+		8D482FFC1A881E2100DD9405 /* default-user-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D482FFB1A881E2100DD9405 /* default-user-icon.png */; };
+		8D4830001A8827E000DD9405 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D482FFF1A8827E000DD9405 /* share.png */; };
+		8D4830071A88509F00DD9405 /* large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D4830061A88509F00DD9405 /* large.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +48,42 @@
 		8D482F931A83A61100DD9405 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D482F951A83A61100DD9405 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D482F961A83A61100DD9405 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8D482F981A83A61100DD9405 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8D482F991A83A61100DD9405 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8D482F9C1A83A61100DD9405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D482F9E1A83A61100DD9405 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8D482FA11A83A61100DD9405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8D482FA71A83A61100DD9405 /* MyFlickrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFlickrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D482FAC1A83A61100DD9405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D482FAD1A83A61100DD9405 /* MyFlickrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFlickrTests.m; sourceTree = "<group>"; };
+		8D482FBA1A84502A00DD9405 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewController.h; path = ViewController/CollectionViewController.h; sourceTree = "<group>"; };
+		8D482FBB1A84502A00DD9405 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewController.m; path = ViewController/CollectionViewController.m; sourceTree = "<group>"; };
+		8D482FC01A8450BB00DD9405 /* KeyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyConstants.h; path = Model/KeyConstants.h; sourceTree = "<group>"; };
+		8D482FC11A8450BB00DD9405 /* KeyConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyConstants.m; path = Model/KeyConstants.m; sourceTree = "<group>"; };
+		8D482FC31A84513200DD9405 /* WebServiceAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebServiceAPI.h; path = Model/WebServiceAPI.h; sourceTree = "<group>"; };
+		8D482FC41A84513200DD9405 /* WebServiceAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebServiceAPI.m; path = Model/WebServiceAPI.m; sourceTree = "<group>"; };
+		8D482FC71A8451AC00DD9405 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomCollectionViewCell.h; path = View/CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		8D482FC81A8451AC00DD9405 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomCollectionViewCell.m; path = View/CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		8D482FCD1A845C0700DD9405 /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Feed.h; path = Model/Feed.h; sourceTree = "<group>"; };
+		8D482FCE1A845C0700DD9405 /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Feed.m; path = Model/Feed.m; sourceTree = "<group>"; };
+		8D482FD11A845D1A00DD9405 /* NSDictionary+safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+safe.h"; path = "Model/NSDictionary+safe.h"; sourceTree = "<group>"; };
+		8D482FD21A845D1A00DD9405 /* NSDictionary+safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+safe.m"; path = "Model/NSDictionary+safe.m"; sourceTree = "<group>"; };
+		8D482FD61A84646500DD9405 /* FeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedItem.h; path = Model/FeedItem.h; sourceTree = "<group>"; };
+		8D482FD71A84646500DD9405 /* FeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedItem.m; path = Model/FeedItem.m; sourceTree = "<group>"; };
+		8D482FDA1A846FDF00DD9405 /* CollectionViewControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewControllerModel.h; path = Model/CollectionViewControllerModel.h; sourceTree = "<group>"; };
+		8D482FDB1A846FDF00DD9405 /* CollectionViewControllerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewControllerModel.m; path = Model/CollectionViewControllerModel.m; sourceTree = "<group>"; };
+		8D482FDE1A84727800DD9405 /* AsyncNSURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncNSURLConnection.h; path = Model/AsyncNSURLConnection.h; sourceTree = "<group>"; };
+		8D482FDF1A84727800DD9405 /* AsyncNSURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncNSURLConnection.m; path = Model/AsyncNSURLConnection.m; sourceTree = "<group>"; };
+		8D482FE21A85DC7A00DD9405 /* WebServiceResponseNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebServiceResponseNotification.h; path = Model/WebServiceResponseNotification.h; sourceTree = "<group>"; };
+		8D482FE31A85DC7A00DD9405 /* WebServiceResponseNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebServiceResponseNotification.m; path = Model/WebServiceResponseNotification.m; sourceTree = "<group>"; };
+		8D482FE71A86A15B00DD9405 /* CollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewLayout.h; path = View/CollectionViewLayout.h; sourceTree = "<group>"; };
+		8D482FE81A86A15B00DD9405 /* CollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewLayout.m; path = View/CollectionViewLayout.m; sourceTree = "<group>"; };
+		8D482FF31A87409900DD9405 /* UIImage+AverageColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+AverageColor.h"; path = "Model/UIImage+AverageColor.h"; sourceTree = "<group>"; };
+		8D482FF41A87409900DD9405 /* UIImage+AverageColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+AverageColor.m"; path = "Model/UIImage+AverageColor.m"; sourceTree = "<group>"; };
+		8D482FF61A87B40500DD9405 /* Flickrlogo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Flickrlogo.gif; sourceTree = "<group>"; };
+		8D482FF81A881D5100DD9405 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ViewController/DetailViewController.h; sourceTree = "<group>"; };
+		8D482FF91A881D5100DD9405 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ViewController/DetailViewController.m; sourceTree = "<group>"; };
+		8D482FFB1A881E2100DD9405 /* default-user-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-user-icon.png"; sourceTree = "<group>"; };
+		8D482FFF1A8827E000DD9405 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		8D4830061A88509F00DD9405 /* large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = large.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +125,11 @@
 		8D482F901A83A61100DD9405 /* MyFlickr */ = {
 			isa = PBXGroup;
 			children = (
-				8D482F951A83A61100DD9405 /* AppDelegate.h */,
-				8D482F961A83A61100DD9405 /* AppDelegate.m */,
-				8D482F981A83A61100DD9405 /* ViewController.h */,
-				8D482F991A83A61100DD9405 /* ViewController.m */,
-				8D482F9B1A83A61100DD9405 /* Main.storyboard */,
+				8D482FBD1A84503D00DD9405 /* AppDelegate */,
+				8D482FB91A844FE000DD9405 /* ViewController */,
+				8D482FB81A844FCF00DD9405 /* View */,
+				8D482FB71A844FBD00DD9405 /* Model */,
 				8D482F9E1A83A61100DD9405 /* Images.xcassets */,
-				8D482FA01A83A61100DD9405 /* LaunchScreen.xib */,
 				8D482F911A83A61100DD9405 /* Supporting Files */,
 			);
 			path = MyFlickr;
@@ -96,6 +138,10 @@
 		8D482F911A83A61100DD9405 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8D4830061A88509F00DD9405 /* large.jpg */,
+				8D482FFF1A8827E000DD9405 /* share.png */,
+				8D482FFB1A881E2100DD9405 /* default-user-icon.png */,
+				8D482FF61A87B40500DD9405 /* Flickrlogo.gif */,
 				8D482F921A83A61100DD9405 /* Info.plist */,
 				8D482F931A83A61100DD9405 /* main.m */,
 			);
@@ -117,6 +163,152 @@
 				8D482FAC1A83A61100DD9405 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D482FB71A844FBD00DD9405 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D482FDD1A84723900DD9405 /* AsyncNSURLConnection */,
+				8D482FD91A846F9E00DD9405 /* ViewControllerModel */,
+				8D482FD01A845CDD00DD9405 /* Categories */,
+				8D482FCC1A845BD500DD9405 /* Custom Classes */,
+				8D482FBF1A84509400DD9405 /* KeyConstants */,
+				8D482FBE1A84508500DD9405 /* WebServiceAPI */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8D482FB81A844FCF00DD9405 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D482FE61A86A11300DD9405 /* CollectionViewFlowLayout */,
+				8D482FC61A84515A00DD9405 /* CustomCells */,
+				8D482F9B1A83A61100DD9405 /* Main.storyboard */,
+				8D482FA01A83A61100DD9405 /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8D482FB91A844FE000DD9405 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8D482FBA1A84502A00DD9405 /* CollectionViewController.h */,
+				8D482FBB1A84502A00DD9405 /* CollectionViewController.m */,
+				8D482FF81A881D5100DD9405 /* DetailViewController.h */,
+				8D482FF91A881D5100DD9405 /* DetailViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		8D482FBD1A84503D00DD9405 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8D482F951A83A61100DD9405 /* AppDelegate.h */,
+				8D482F961A83A61100DD9405 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8D482FBE1A84508500DD9405 /* WebServiceAPI */ = {
+			isa = PBXGroup;
+			children = (
+				8D482FC31A84513200DD9405 /* WebServiceAPI.h */,
+				8D482FC41A84513200DD9405 /* WebServiceAPI.m */,
+			);
+			name = WebServiceAPI;
+			sourceTree = "<group>";
+		};
+		8D482FBF1A84509400DD9405 /* KeyConstants */ = {
+			isa = PBXGroup;
+			children = (
+				8D482FC01A8450BB00DD9405 /* KeyConstants.h */,
+				8D482FC11A8450BB00DD9405 /* KeyConstants.m */,
+			);
+			name = KeyConstants;
+			sourceTree = "<group>";
+		};
+		8D482FC61A84515A00DD9405 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				8D482FC71A8451AC00DD9405 /* CustomCollectionViewCell.h */,
+				8D482FC81A8451AC00DD9405 /* CustomCollectionViewCell.m */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		8D482FCC1A845BD500DD9405 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8D482FE11A85DC4600DD9405 /* WebServiceResponseNotification */,
+				8D482FD51A84643C00DD9405 /* FeedItem */,
+				8D482FD41A84643500DD9405 /* Feed */,
+			);
+			name = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		8D482FD01A845CDD00DD9405 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8D482FD11A845D1A00DD9405 /* NSDictionary+safe.h */,
+				8D482FD21A845D1A00DD9405 /* NSDictionary+safe.m */,
+				8D482FF31A87409900DD9405 /* UIImage+AverageColor.h */,
+				8D482FF41A87409900DD9405 /* UIImage+AverageColor.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		8D482FD41A84643500DD9405 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				8D482FCD1A845C0700DD9405 /* Feed.h */,
+				8D482FCE1A845C0700DD9405 /* Feed.m */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		8D482FD51A84643C00DD9405 /* FeedItem */ = {
+			isa = PBXGroup;
+			children = (
+				8D482FD61A84646500DD9405 /* FeedItem.h */,
+				8D482FD71A84646500DD9405 /* FeedItem.m */,
+			);
+			name = FeedItem;
+			sourceTree = "<group>";
+		};
+		8D482FD91A846F9E00DD9405 /* ViewControllerModel */ = {
+			isa = PBXGroup;
+			children = (
+				8D482FDA1A846FDF00DD9405 /* CollectionViewControllerModel.h */,
+				8D482FDB1A846FDF00DD9405 /* CollectionViewControllerModel.m */,
+			);
+			name = ViewControllerModel;
+			sourceTree = "<group>";
+		};
+		8D482FDD1A84723900DD9405 /* AsyncNSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				8D482FDE1A84727800DD9405 /* AsyncNSURLConnection.h */,
+				8D482FDF1A84727800DD9405 /* AsyncNSURLConnection.m */,
+			);
+			name = AsyncNSURLConnection;
+			sourceTree = "<group>";
+		};
+		8D482FE11A85DC4600DD9405 /* WebServiceResponseNotification */ = {
+			isa = PBXGroup;
+			children = (
+				8D482FE21A85DC7A00DD9405 /* WebServiceResponseNotification.h */,
+				8D482FE31A85DC7A00DD9405 /* WebServiceResponseNotification.m */,
+			);
+			name = WebServiceResponseNotification;
+			sourceTree = "<group>";
+		};
+		8D482FE61A86A11300DD9405 /* CollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				8D482FE71A86A15B00DD9405 /* CollectionViewLayout.h */,
+				8D482FE81A86A15B00DD9405 /* CollectionViewLayout.m */,
+			);
+			name = CollectionViewFlowLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +392,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D482F9D1A83A61100DD9405 /* Main.storyboard in Resources */,
+				8D4830071A88509F00DD9405 /* large.jpg in Resources */,
 				8D482FA21A83A61100DD9405 /* LaunchScreen.xib in Resources */,
+				8D4830001A8827E000DD9405 /* share.png in Resources */,
 				8D482F9F1A83A61100DD9405 /* Images.xcassets in Resources */,
+				8D482FFC1A881E2100DD9405 /* default-user-icon.png in Resources */,
+				8D482FF71A87B40500DD9405 /* Flickrlogo.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +415,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D482F9A1A83A61100DD9405 /* ViewController.m in Sources */,
 				8D482F971A83A61100DD9405 /* AppDelegate.m in Sources */,
+				8D482FE91A86A15B00DD9405 /* CollectionViewLayout.m in Sources */,
+				8D482FC51A84513200DD9405 /* WebServiceAPI.m in Sources */,
+				8D482FCF1A845C0700DD9405 /* Feed.m in Sources */,
 				8D482F941A83A61100DD9405 /* main.m in Sources */,
+				8D482FFA1A881D5100DD9405 /* DetailViewController.m in Sources */,
+				8D482FDC1A846FDF00DD9405 /* CollectionViewControllerModel.m in Sources */,
+				8D482FD81A84646500DD9405 /* FeedItem.m in Sources */,
+				8D482FC91A8451AC00DD9405 /* CustomCollectionViewCell.m in Sources */,
+				8D482FBC1A84502A00DD9405 /* CollectionViewController.m in Sources */,
+				8D482FE41A85DC7A00DD9405 /* WebServiceResponseNotification.m in Sources */,
+				8D482FC21A8450BB00DD9405 /* KeyConstants.m in Sources */,
+				8D482FD31A845D1A00DD9405 /* NSDictionary+safe.m in Sources */,
+				8D482FE01A84727800DD9405 /* AsyncNSURLConnection.m in Sources */,
+				8D482FF51A87409900DD9405 /* UIImage+AverageColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +622,7 @@
 				8D482FB31A83A61100DD9405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D482FB41A83A61100DD9405 /* Build configuration list for PBXNativeTarget "MyFlickrTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +631,7 @@
 				8D482FB61A83A61100DD9405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
