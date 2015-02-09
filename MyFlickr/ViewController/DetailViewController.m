@@ -8,6 +8,8 @@
 
 #import "DetailViewController.h"
 #import "AsyncNSURLConnection.h"
+#import "NSDictionary+safe.h"
+#import "NSDictionary+safe.h"
 
 
 @interface DetailViewController()<AsyncNSURLConnectionDelegate>
@@ -23,11 +25,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initModel];
-    NSLog(@"%@",[self.feedItem.media objectForKey:[[self.feedItem.media allKeys]firstObject]]);
+    NSLog(@"%@",[self.feedItem.media safeObjectForKey:[[self.feedItem.media allKeys]firstObject]]);
 }
 
 - (void)initModel {
-    NSString *originalUrl = [self.feedItem.media objectForKey:[[self.feedItem.media allKeys]firstObject]];
+    
+    NSString *originalUrl = [self.feedItem.media safeObjectForKey:([[self.feedItem.media allKeys]count]>0)?[[self.feedItem.media allKeys]firstObject]:@""];
     NSMutableArray *originalUrlParts = [[originalUrl componentsSeparatedByString:@"_"]mutableCopy];
     NSString *lastPart = [originalUrlParts lastObject];
     [originalUrlParts removeLastObject];

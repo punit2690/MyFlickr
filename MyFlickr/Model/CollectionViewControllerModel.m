@@ -11,6 +11,7 @@
 #import "WebServiceAPI.h"
 #import "KeyConstants.h"
 #import "FeedItem.h"
+#import "NSDictionary+safe.h"
 
 @interface CollectionViewControllerModel()<AsyncNSURLConnectionDelegate>
 
@@ -49,7 +50,7 @@
                 _feed = [[Feed alloc]initWithResponse:responseObject];
                 NSLog(@"feed: %lu",(unsigned long)[self.feed.feedItems count]);
             } else {
-                for (NSDictionary *dict in [responseObject objectForKey:KEY_FEED_ITEMS]) {
+                for (NSDictionary *dict in [responseObject safeObjectForKey:KEY_FEED_ITEMS]) {
                     FeedItem *feedItem = [[FeedItem alloc]initWithDict:dict];
                     [self.feed.feedItems addObject:feedItem];
                 }

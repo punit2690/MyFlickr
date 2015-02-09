@@ -41,9 +41,9 @@
 
 - (void)willDisplayFeedItemForIndexPath:(NSIndexPath *)indexPath {
     if (!self.imageData) {
-        if ([self.media objectForKey:@"m"]) {
+        if ([self.media objectForKey:([[self.media allKeys]count]>0)?[[self.media allKeys]objectAtIndex:0]:@""]) {
             self.indexPath = indexPath;
-            AsyncNSURLConnection *asyncNSURLConnection = [[AsyncNSURLConnection alloc]initWithUrl:[self.media objectForKey:@"m"]
+            AsyncNSURLConnection *asyncNSURLConnection = [[AsyncNSURLConnection alloc]initWithUrl:[self.media objectForKey:([[self.media allKeys]count]>0)?[[self.media allKeys]objectAtIndex:0]:@""]
                                          forTask:@"GET_ITEM_IMAGE" delegate:self];
             (void)asyncNSURLConnection;
         }
@@ -78,9 +78,9 @@
     
     if ([task isEqualToString:@"GET_AUTHOR_INFO"]) {
         if (responseObject) {
-            _iconServer = [[responseObject objectForKey:@"person"]objectForKey:@"iconserver"];
-            _farm = [[responseObject objectForKey:@"person"]objectForKey:@"iconfarm"];
-            _alias = [[responseObject objectForKey:@"person"]objectForKey:@"path_alias"];
+            _iconServer = [[responseObject safeObjectForKey:@"person"]objectForKey:@"iconserver"];
+            _farm = [[responseObject safeObjectForKey:@"person"]objectForKey:@"iconfarm"];
+            _alias = [[responseObject safeObjectForKey:@"person"]objectForKey:@"path_alias"];
         }
     }
 }
