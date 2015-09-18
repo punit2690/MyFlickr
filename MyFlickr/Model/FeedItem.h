@@ -12,28 +12,28 @@
 @protocol FeedItemDelegate <NSObject>
 
 @required
-- (void)didReceieveDataForItemAtIndexPath:(NSIndexPath *)indexPath;
+- (void)didReceiveDataForItemAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
 @interface FeedItem : NSObject
 
-@property (nonatomic,strong) NSString *link;
+@property (nonatomic,copy) NSString *link;
 @property (nonatomic,strong) NSDictionary *media;
-@property (nonatomic,strong) NSString *dateTaken;
-@property (nonatomic,strong) NSString *feedDescription;
-@property (nonatomic,strong) NSString *published;
-@property (nonatomic,strong) NSString *author;
-@property (nonatomic,strong) NSString *authorId;
+@property (nonatomic,copy) NSString *dateTaken;
+@property (nonatomic,copy) NSString *feedDescription;
+@property (nonatomic,copy) NSString *published;
+@property (nonatomic,copy) NSString *author;
+@property (nonatomic,copy) NSString *authorId;
 @property (nonatomic,strong) NSArray *tags;
 @property (nonatomic,strong) NSData *imageData;
 @property (nonatomic,strong) NSData *buddyImageData;
 
 @property (nonatomic,strong) NSIndexPath *indexPath;
 
-@property (nonatomic,strong) NSString *farm;
-@property (nonatomic,strong) NSString *iconServer;
-@property (nonatomic,strong) NSString *alias;
+@property (nonatomic,copy) NSString *farm;
+@property (nonatomic,copy) NSString *iconServer;
+@property (nonatomic,copy) NSString *alias;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 - (void)willDisplayFeedItemForIndexPath:(NSIndexPath *)indexPath;

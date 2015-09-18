@@ -37,7 +37,7 @@
     NSArray *extensionArray = [lastPart componentsSeparatedByString:@"."];
     NSString *extensionString = [extensionArray lastObject];
     
-    NSMutableString *imageUrl = [[NSMutableString alloc]init];
+    NSMutableString *imageUrl;
     imageUrl = (NSMutableString *)[originalUrlParts componentsJoinedByString:@"_"];
     imageUrl = [NSMutableString stringWithFormat:@"%@.%@",imageUrl,extensionString];
     

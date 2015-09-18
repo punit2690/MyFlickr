@@ -10,8 +10,8 @@
 
 @interface WebServiceResponseNotification : NSObject
 
-@property (nonatomic,strong) NSString *tag;
-@property (nonatomic,getter=isSuccessful) BOOL successful;
+@property (nonatomic,copy) NSString *tag;
+@property (nonatomic,getter=isSuccessful,assign) BOOL successful;
 
 - (BOOL)isSuccessful;
 

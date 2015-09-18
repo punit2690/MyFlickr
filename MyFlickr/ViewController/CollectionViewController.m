@@ -15,6 +15,7 @@
 #import "DetailViewController.h"
 
 @interface CollectionViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UITraitEnvironment>
+
 @property (nonatomic,strong) CollectionViewControllerModel *collectionViewModel;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
@@ -34,6 +35,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     
+    [super viewWillAppear:animated];
     [[NSNotificationCenter defaultCenter]addObserver:self
                                             selector:@selector(webServiceResponseRecieved:)
                                                 name:@"WebServiceResponseRecieved"
@@ -46,6 +48,8 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
     [[NSNotificationCenter defaultCenter]removeObserver:self];
     isLoading = NO;
 }
@@ -198,7 +202,9 @@
     
     if (![feedItem.alias isKindOfClass:[NSNull class]]) {
         [customCollectionViewCell.aliasLabel setText:feedItem.alias];
-    } else {
+    }
+    
+    else {
         [customCollectionViewCell.aliasLabel setText:@""];
     }
 }
@@ -215,6 +221,7 @@
 //-----------------------------------------------------
 
 - (void)scrollViewDidScroll:(UIScrollView *)scroll {
+
     CGFloat currentOffset = scroll.contentOffset.y;
     CGFloat maximumOffset = scroll.contentSize.height - scroll.frame.size.height;
     
