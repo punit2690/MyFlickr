@@ -15,7 +15,7 @@
 @implementation CustomCollectionViewCell
 
 - (void)awakeFromNib {
-    
+    [super awakeFromNib];
     self.contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
 
     self.buddyImageView.layer.cornerRadius = self.buddyImageView.bounds.size.width/2;

@@ -218,7 +218,7 @@
     CGFloat currentOffset = scroll.contentOffset.y;
     CGFloat maximumOffset = scroll.contentSize.height - scroll.frame.size.height;
     
-    if (fabsf(maximumOffset - currentOffset) <= 150 && isLoading == NO) {
+    if (fabs(maximumOffset - currentOffset) <= 150 && isLoading == NO) {
             [self.collectionViewModel loadNextPage];
             isLoading = YES;
     }

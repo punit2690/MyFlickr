@@ -68,17 +68,10 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     NSLog(@"TASK:%@ Request Success",taskName);
-    NSError *error;
 
-    if (error) {
-        NSLog(@"ERROR: Error in serialization. %@",[error description]);
-        responseData = nil;
-
-    } else {
-        [self.delegate didReceieveResponseObject:responseData
-                                         ForTask:taskName];
-        responseData = nil;
-    }
+    [self.delegate didReceieveResponseObject:responseData
+                                     ForTask:taskName];
+    responseData = nil;
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
