@@ -24,13 +24,18 @@
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
                                
-                               NSDictionary* responseDict = [NSJSONSerialization JSONObjectWithData:[AsyncNSURLConnection tempFixForValidJSONFromNSData:data] options:kNilOptions error:&error];
+                               NSDictionary* responseDict = [NSJSONSerialization JSONObjectWithData:[AsyncNSURLConnection tempFixForValidJSONFromNSData:data]
+                                                                                            options:kNilOptions
+                                                                                              error:&error];
                                NSLog(@"JSON Receieved: %@",[responseDict description]);
                                [delegate didReceieveResponseObject:responseDict
-                                      ForTask:task]; }];
+                                      ForTask:task];
+                           }];
 }
 
-- (instancetype)initWithUrl:(NSString *)url forTask:(NSString *)task delegate:(id<AsyncNSURLConnectionDelegate>) delegate {
+- (instancetype)initWithUrl:(NSString *)url
+                    forTask:(NSString *)task
+                   delegate:(id<AsyncNSURLConnectionDelegate>) delegate {
 
 
     if (self = [super init]) {

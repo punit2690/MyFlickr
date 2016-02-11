@@ -18,7 +18,7 @@
 
 @interface AsyncNSURLConnection : NSObject<NSURLConnectionDataDelegate>
 
-@property (nonatomic,strong) id<AsyncNSURLConnectionDelegate> delegate;
+@property (nonatomic,weak) id<AsyncNSURLConnectionDelegate> delegate;
 
 - (instancetype)initWithUrl:(NSString *)url
                     forTask:(NSString *)task
